@@ -82,11 +82,11 @@ for (i in 1:nrow(act_w_NAs)) {
 ```
 Next I will make a histogram of this altered data frame
 ```{r}
-# total of steps/day
+
 steps_tot_1 <- aggregate(steps ~ date, act_w_NAs, sum)
 
 # histogram of steps/day
-hist(steps_tot_1$steps, main = "Total number of steps per day(IMPUTED", xlab = "Steps per day")
+hist(steps_tot_1$steps, main = "Total number of steps per day(IMPUTED)", xlab = "Steps per day")
 
 ```
 
